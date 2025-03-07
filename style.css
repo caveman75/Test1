@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    margin: 0 5px;
+}
+
+/* Increase Question Font Size */
+#question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Number Pad Styles */
+#numPad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 15px auto;
+    max-width: 250px;
+}
+
+.num-btn, .special-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.num-btn:hover, .special-btn:hover {
+    background-color: #666;
+}
+
+.special-btn {
+    background-color: #888;
+}
+
+/* Special Buttons */
+#clear {
+    background-color: #d32f2f;
+}
+
+#submit {
+    background-color: #4CAF50;
+    font-size: 18px;
+}
+
+/* Button Group for Restart & Exit */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #777;
+}
+
+/* Stats Section */
+.stats p {
+    margin: 10px 0;
+}
+
+/* History Page Styles */
+#historyList {
+    margin: 20px 0;
+    text-align: left;
+}
+
+#historyList p {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d32f2f;
+}
+
+/* Remove Spinner from Input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* High Scores Section */
+#highScores {
+    margin-top: 20px;
+}
+
+#highScores h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#highScoreList {
+    text-align: left;
+}
+
+#highScoreList div {
+    margin: 5px 0;
+}
+
+#highScoreList h3 {
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+}
+
+#highScoreList ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#highScoreList li {
+    margin: 5px 0;
+}

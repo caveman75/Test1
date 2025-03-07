@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Challenge Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="coverPage" class="container">
+        <h1>Math Challenge</h1>
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" placeholder="Your Name" required>
+        <div class="radio-group">
+            <label><input type="radio" name="operation" value="+" checked> Addition</label>
+            <label><input type="radio" name="operation" value="-"> Subtraction</label>
+            <label><input type="radio" name="operation" value="×"> Multiplication</label>
+            <label><input type="radio" name="operation" value="÷"> Division</label>
+        </div>
+        <button id="startGame">Start Game</button>
+        <div id="highScores">
+            <h2>Top 5 High Scores</h2>
+            <div id="highScoreList"></div>
+        </div>
+        <button id="resetHighScore">Reset Highscore</button>
+    </div>
+
+    <div id="gamePage" class="container" style="display: none;">
+        <h1>Math Challenge</h1>
+        <p id="question">Loading...</p>
+        <input type="number" id="answerInput" placeholder="Enter answer" autofocus>
+
+        <div id="numPad">
+            <button class="num-btn">1</button>
+            <button class="num-btn">2</button>
+            <button class="num-btn">3</button>
+            <button class="num-btn">4</button>
+            <button class="num-btn">5</button>
+            <button class="num-btn">6</button>
+            <button class="num-btn">7</button>
+            <button class="num-btn">8</button>
+            <button class="num-btn">9</button>
+            <button id="clear" class="special-btn">Clear</button>
+            <button class="num-btn">0</button>
+            <button id="submit" class="special-btn">Submit</button>
+        </div>
+
+        <div class="button-group">
+            <button id="exitButton">Exit Game</button>
+            <button id="restartButton">Restart</button>
+        </div>
+
+        <div class="stats">
+            <p>Time Left: <span id="timer">60</span> sec</p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Correct / Attempted: <span id="correctAttempted">0 / 0</span></p>
+        </div>
+        <button id="showMistakesInGame" style="display: none; margin: 10px auto;">Show Last Game's Mistakes</button>
+    </div>
+
+    <div id="historyPage" class="container" style="display: none; margin-top: 20px;">
+        <h1>Last Game's Mistakes</h1>
+        <div id="historyList"></div>
+        <button id="closeHistory">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
